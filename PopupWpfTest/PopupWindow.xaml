@@ -1,0 +1,36 @@
+﻿<Window Name="PopupWindow1"
+        x:Class="PopupWpfTest.PopupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PopupWpfTest"
+        mc:Ignorable="d"
+        Title="PopupWindow" 
+        Width="Auto" Height="Auto"
+        MinWidth="200" MinHeight="50"
+        MaxWidth="400" MaxHeight="100"
+        ShowInTaskbar="False" 
+        WindowStyle="None" ResizeMode="NoResize"
+        Topmost="True" 
+        WindowStartupLocation="CenterScreen" 
+        Cursor="Hand" 
+        Background="Transparent" SizeToContent="WidthAndHeight"
+        MouseDown="Window_MouseDown"
+        ContentRendered="PopupWindow1_ContentRendered"
+        AllowsTransparency="True">
+  <Grid Height="Auto">
+
+    <Border Background="Gray" CornerRadius="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="1" Height="Auto" Width="Auto">
+      <Border Background="White" CornerRadius="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="7, 5, 12, 5" Height="Auto" Width="Auto">
+        <StackPanel Orientation="Horizontal">
+          <Image Source="copy-to-clipboard-icon-17.jpg" Height="32"></Image>
+          <TextBlock HorizontalAlignment="Stretch" VerticalAlignment="Center" TextWrapping="Wrap" FontSize="14" FontFamily="Segoe UI Semibold" FontWeight="Bold" Foreground="#FF0082A8" Padding="5,0,0,0">
+              Отчет 'Report12' скопирован в буфер обмена.
+          </TextBlock>
+        </StackPanel>
+        
+      </Border>
+    </Border>
+  </Grid>
+</Window>
