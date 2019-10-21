@@ -22,14 +22,17 @@
   <Grid Height="Auto">
 
     <Border Background="Gray" CornerRadius="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="1" Height="Auto" Width="Auto">
-      <Border Background="White" CornerRadius="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="7, 5, 12, 5" Height="Auto" Width="Auto">
+      <Border Background="White" CornerRadius="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="7, 0, 12, 0" Height="Auto" Width="Auto">
         <StackPanel Orientation="Horizontal">
-          <Image Source="copy-to-clipboard-icon-17.jpg" Height="32"></Image>
-          <TextBlock HorizontalAlignment="Stretch" VerticalAlignment="Center" TextWrapping="Wrap" FontSize="14" FontFamily="Segoe UI Semibold" FontWeight="Bold" Foreground="#FF0082A8" Padding="5,0,0,0">
+          <Image Source="copy24.png" Height="24" OpacityMask="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"></Image>
+          <TextBlock HorizontalAlignment="Stretch" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Segoe UI Semibold" FontWeight="Bold" Padding="5,0,0,0">
+            <TextBlock.Foreground>
+              <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HotTrackColorKey}}"/>
+            </TextBlock.Foreground>
               Отчет 'Report12' скопирован в буфер обмена.
           </TextBlock>
         </StackPanel>
-        
+
       </Border>
     </Border>
   </Grid>

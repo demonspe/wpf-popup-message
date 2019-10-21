@@ -102,7 +102,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="copy-to-clipboard-icon-17.jpg" />
+    <Resource Include="copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="copy24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
